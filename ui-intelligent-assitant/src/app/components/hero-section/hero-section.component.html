@@ -1,0 +1,32 @@
+<div>
+  <div class="herosection">
+    <div>
+      <h1>#Generate</h1>
+      <h1>Intelligent</h1>
+      <h1>OPA</h1>
+    </div>
+    <div>
+      <img class="heroimage" src="../../../assets/image.jpg" />
+    </div>
+  </div>
+  <div class="uploader">
+    <form [formGroup]="projectDetails">
+      <div>
+        <label for="username"><h3>Name :</h3></label>
+        <input id="username" type="text" class="ms-3 inputform" formControlName="name" />
+      </div>
+      <div>
+        <label for="E-Mail"><h3>E-mail :</h3></label>
+        <input id="E-mail" type="email" class="ms-3 inputform" formControlName="email" />
+      </div>
+      <div>
+        <label for="file-uploader"><h3>Project:</h3></label>
+        <input id="file-uploader" type="file" class="ms-3" formControlName="project" />
+      </div>
+      <div>
+        <button class="btn btn-primary" type="submit" (click)="parseProject($event)">Upload</button>
+      </div>
+    </form>
+  </div>
+  <!-- <p>{{ projectDetails.value | json }}</p> -->
+</div>

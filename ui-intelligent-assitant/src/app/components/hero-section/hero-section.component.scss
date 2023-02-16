@@ -1,0 +1,50 @@
+.herosection {
+  padding: 5% 20%;
+  display: flex;
+  flex-direction: row;
+
+  h1 {
+    font-weight: 600;
+    font-size: 100px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+  }
+}
+
+.heroimage {
+  margin-left: 15px;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 70px;
+}
+
+.uploader {
+  position: absolute;
+  z-index: 2;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe69a;
+  width: 60%;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.inputform {
+  border-radius: 5px;
+  width: 60%;
+  height: 35px;
+  padding-left: 10px;
+}
+
+input.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+button{
+  width: 400px;
+  margin-top: 10px;
+}
