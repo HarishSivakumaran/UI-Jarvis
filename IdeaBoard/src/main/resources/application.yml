@@ -1,18 +1,19 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/intelligent-ui
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/opagenerator
     username: postgres
     password: admin
   jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: intellicode
 
 
-
-flyway:
-  url: jdbc:postgresql://localhost:5432
-  schemas: intelligent-ui
 
 
 
