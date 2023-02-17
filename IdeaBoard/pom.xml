@@ -77,7 +77,7 @@
 					<user>postgres</user>
 					<password>admin</password>
 					<baselineOnMigrate>true</baselineOnMigrate>
-					<schemas>intellicode</schemas>
+					<cleanDisabled>false</cleanDisabled>
 					<locations>
 						<location>
 							filesystem:src/main/resources/db/migration

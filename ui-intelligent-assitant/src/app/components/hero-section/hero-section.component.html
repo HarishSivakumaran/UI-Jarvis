@@ -11,20 +11,41 @@
   </div>
   <div class="uploader">
     <form [formGroup]="projectDetails">
-      <div>
-        <label for="username"><h3>Name :</h3></label>
-        <input id="username" type="text" class="ms-3 inputform" formControlName="name" />
+      <div class="mb-3">
+        <label for="username"><h4>Name :</h4></label>
+        <input
+          id="username"
+          type="text"
+          class="ms-3 inputform"
+          formControlName="name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="E-Mail"><h4>E-mail :</h4></label>
+        <input
+          id="E-mail"
+          type="email"
+          class="ms-3 inputform"
+          formControlName="email"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="file-uploader"><h4>Project:</h4></label>
+        <input
+          id="file-uploader"
+          type="file"
+          class="ms-3"
+          formControlName="project"
+        />
       </div>
       <div>
-        <label for="E-Mail"><h3>E-mail :</h3></label>
-        <input id="E-mail" type="email" class="ms-3 inputform" formControlName="email" />
-      </div>
-      <div>
-        <label for="file-uploader"><h3>Project:</h3></label>
-        <input id="file-uploader" type="file" class="ms-3" formControlName="project" />
-      </div>
-      <div>
-        <button class="btn btn-primary" type="submit" (click)="parseProject($event)">Upload</button>
+        <button
+          class="btn btn-success"
+          type="submit"
+          (click)="parseProject($event)"
+        >
+          Upload
+        </button>
       </div>
     </form>
   </div>

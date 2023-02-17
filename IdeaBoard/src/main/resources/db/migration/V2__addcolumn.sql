@@ -1,0 +1,2 @@
+ALTER TABLE project
+ADD COLUMN file_blob BYTEA;
