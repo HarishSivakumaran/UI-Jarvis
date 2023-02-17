@@ -4,6 +4,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/opagenerator
     username: postgres
     password: admin
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,7 +16,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         default_schema: intellicode
-
 
 
 

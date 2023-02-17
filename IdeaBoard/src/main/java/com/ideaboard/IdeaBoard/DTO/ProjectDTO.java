@@ -1,14 +1,11 @@
-package com.ideaboard.IdeaBoard.Model;
+package com.ideaboard.IdeaBoard.DTO;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Lob;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.UUID;
 
-@Entity
-@Table(name = "project")
-public class ProjectDB {
-    @Id
-    @GeneratedValue
+public class ProjectDTO {
     private UUID id;
 
     private String name;
@@ -17,10 +14,9 @@ public class ProjectDB {
 
     private String project_url;
 
-    @Lob
-    private byte[] data;
+    private MultipartFile data;
 
-    public ProjectDB(String name, String email_id, String project_url, byte[] data) {
+    public ProjectDTO(String name, String email_id, String project_url, MultipartFile data) {
         this.name = name;
         this.email_id = email_id;
         this.project_url = project_url;
@@ -59,11 +55,11 @@ public class ProjectDB {
         this.project_url = project_url;
     }
 
-    public byte[] getData() {
+    public MultipartFile getData() {
         return data;
     }
 
-    public void setData(byte[] data) {
+    public void setData(MultipartFile data) {
         this.data = data;
     }
 }
