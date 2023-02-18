@@ -26,7 +26,7 @@
           id="E-mail"
           type="email"
           class="ms-3 inputform"
-          formControlName="email"
+          formControlName="email_id"
         />
       </div>
       <div class="mb-3">
@@ -35,7 +35,8 @@
           id="file-uploader"
           type="file"
           class="ms-3"
-          formControlName="project"
+          formControlName="project_url"
+          (change)="handleFileInput($event)"
         />
       </div>
       <div>
